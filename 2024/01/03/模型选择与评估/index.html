@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"frankie-dejong.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="对于一个机器学习的模型来说，我们首先需要知道的是这个模型的好坏。 误差  误差：模型预测与样本之间的差异 训练误差：学习器在训练集上的误差 泛化误差：学习器在新样本上的误差  那么，我们的目标总是最小化模型的泛化误差，也就是改善它在新的数据上的表现。但问题在于，我们在训练过程中，是没有新的数据的。如何才能预知模型在新数据上的误差呢？  测试误差：学习器在测试集上的误差  由此我们引进了测试集。在训">
+  <meta name="description" content="对于一个机器学习的模型来说，我们首先需要知道的是这个模型的好坏。 误差  误差：模型预测与样本之间的差异 训练误差：学习器在训练集上的误差 泛化误差：学习器在新样本上的误差  那么，我们的目标总是最小化模型的泛化误差，也就是改善它在新的数据上的表现。但问题在于，我们在训练过程中，是没有新的数据的。如何才能预知模型在新数据上的误差呢？  测试误差：学习器在测试集上的误差">
 <meta property="og:type" content="article">
 <meta property="og:title" content="模型选择与评估">
 <meta property="og:url" content="https://frankie-dejong.github.io/2024/01/03/%E6%A8%A1%E5%9E%8B%E9%80%89%E6%8B%A9%E4%B8%8E%E8%AF%84%E4%BC%B0/index.html">
 <meta property="og:site_name" content="Scott&#39;s Blog">
-<meta property="og:description" content="对于一个机器学习的模型来说，我们首先需要知道的是这个模型的好坏。 误差  误差：模型预测与样本之间的差异 训练误差：学习器在训练集上的误差 泛化误差：学习器在新样本上的误差  那么，我们的目标总是最小化模型的泛化误差，也就是改善它在新的数据上的表现。但问题在于，我们在训练过程中，是没有新的数据的。如何才能预知模型在新数据上的误差呢？  测试误差：学习器在测试集上的误差  由此我们引进了测试集。在训">
+<meta property="og:description" content="对于一个机器学习的模型来说，我们首先需要知道的是这个模型的好坏。 误差  误差：模型预测与样本之间的差异 训练误差：学习器在训练集上的误差 泛化误差：学习器在新样本上的误差  那么，我们的目标总是最小化模型的泛化误差，也就是改善它在新的数据上的表现。但问题在于，我们在训练过程中，是没有新的数据的。如何才能预知模型在新数据上的误差呢？  测试误差：学习器在测试集上的误差">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.com/Frankie-Dejong/Images/blob/main/%E6%88%AA%E5%B1%8F2024-01-04%2020.49.53.png?raw=true">
 <meta property="og:image" content="https://github.com/Frankie-Dejong/Images/blob/main/%E6%88%AA%E5%B1%8F2024-01-04%2020.54.39.png?raw=true">
@@ -283,7 +283,7 @@ mjx-container[display="true"] + br {
     <link itemprop="mainEntityOfPage" href="https://frankie-dejong.github.io/2024/01/03/%E6%A8%A1%E5%9E%8B%E9%80%89%E6%8B%A9%E4%B8%8E%E8%AF%84%E4%BC%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpeg">
       <meta itemprop="name" content="Scott">
       <meta itemprop="description" content="">
     </span>
@@ -549,6 +549,8 @@ Curve)为曲线下面积占总方格的比例，面积越大表示分类性能�
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Scott"
+      src="/images/avatar.jpeg">
   <p class="site-author-name" itemprop="name">Scott</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -557,7 +559,7 @@ Curve)为曲线下面积占总方格的比例，面积越大表示分类性能�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -580,7 +582,7 @@ Curve)为曲线下面积占总方格的比例，面积越大表示分类性能�
         <a href="https://github.com/Frankie-Dejong" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Frankie-Dejong" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="/scottbuaa@outlook.com" title="E-Mail → scottbuaa@outlook.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <a href="mailto:scottbuaa@outlook.com" title="E-Mail → mailto:scottbuaa@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
   </div>
 
